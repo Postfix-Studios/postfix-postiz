@@ -30,7 +30,7 @@
     "start:prod:frontend": "pnpm --filter ./apps/frontend run start",
     "start:prod:workers": "pnpm --filter ./apps/workers run start",
     "start:prod:cron": "pnpm --filter ./apps/cron run start",
-    "start:prod": "pnpm -r --workspace-concurrency=1 --filter ./apps/frontend --filter ./apps/backend --filter ./apps/workers  --filter ./apps/cron run start:prod",
+    "start:prod": "pnpm -r --workspace-concurrency=1 --filter ./apps/frontend --filter ./apps/backend --filter ./apps/workers  --filter ./apps/cron run start",
     "dev:docker": "docker compose -f ./docker-compose.dev.yaml up -d",
     "commands:build:development": "pnpm --filter ./apps/commands run build",
     "workers": "rm -rf dist/workers && pnpm --filter ./apps/workers run dev",
